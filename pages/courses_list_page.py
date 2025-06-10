@@ -1,14 +1,19 @@
 from playwright.sync_api import Page, expect
 
 from components.create_course_form_component import CreateCourseFormComponent
+from components.navigation.navbar_component import NavbarComponent
+from components.navigation.sidebar_component import SidebarComponent
 from pages.base_page import BasePage
 
 
 class CoursesListPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
+        self.sidebar = SidebarComponent(page)
+        self.navbar = NavbarComponent(page)
         self.create_course_form = CreateCourseFormComponent(self.page)
 
+        self.courses_button = page.get_by_test_id('courses-drawer-list-item-button')
         self.courses_title = page.get_by_test_id('courses-list-toolbar-title-text')
         self.create_course_button = page.get_by_test_id('courses-list-toolbar-create-course-button')
 
