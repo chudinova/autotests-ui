@@ -1,8 +1,11 @@
+from elements.list_item import ListItem
+
+
 class SidebarComponent:
     def __init__(self, page):
-        self.users_list_item = page.get_by_test_id('users-list-item')
-        self.courses_list_item = page.get_by_test_id('courses-list-item')
-        self.accounts_list_item = page.get_by_test_id('accounts-list-item')
+        self.users_list_item = ListItem(page, 'users-list-item', 'Users')
+        self.courses_list_item = ListItem(page, 'courses-list-item', 'Courses')
+        self.accounts_list_item = ListItem(page, 'accounts-list-item', 'Accounts')
 
     def navigate_to_users_page(self):
         self.users_list_item.click()
