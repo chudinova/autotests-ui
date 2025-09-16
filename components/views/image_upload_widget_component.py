@@ -3,9 +3,9 @@ from playwright.sync_api import Page
 from components.base_component import BaseComponent
 from components.views.empty_view_component import EmptyViewComponent
 from elements.button import Button
+from elements.file_input import FileInput
 from elements.icon import Icon
 from elements.image import Image
-from elements.input import Input
 from elements.text import Text
 
 
@@ -24,7 +24,7 @@ class ImageUploadWidgetComponent(BaseComponent):
             Text(page, f'{identifier}-image-upload-widget-info-description-text', 'Image upload info'))
         self.upload_button = Button(page, f'{identifier}-image-upload-widget-upload-button', 'Upload')
         self.remove_button = Button(page, f'{identifier}-image-upload-widget-remove-button', 'Remove')
-        self.upload_input = Input(page, f'{identifier}-image-upload-widget-upload-button', 'Upload')
+        self.upload_input = FileInput(page, f'{identifier}-image-upload-widget-upload-button', 'Upload')
 
     # Проверяет отображение виджета в зависимости от наличия загруженного изображения
     def check_visible(self, is_image_uploaded: bool = False):
