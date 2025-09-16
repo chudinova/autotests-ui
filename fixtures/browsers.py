@@ -8,14 +8,19 @@ from tools.playwright.pages import initialize_playwright_page
 from tools.routes import AppRoute
 
 
+@pytest.fixture
+def chromium_page(request: SubRequest, playwright: Playwright) -> Page:
+    yield from initialize_playwright_page(playwright, request.node.name)
+
+
 @pytest.fixture(scope="session")
 def initialize_browser_state(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=settings.headless)  # Используем settings.headless
-    context = browser.new_context()
+    browser = playwright.chromium.launch(headless=settings.headless)
+    context = browser.new_context(base_url=settings.get_base_url())
     page = context.new_page()
 
     registration_page = RegistrationPage(page=page)
-    registration_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration')
+    registration_page.visit(AppRoute.REGISTRATION)
     registration_page.registration_form.fill(
         email=settings.test_user.email,
         username=settings.test_user.username,
@@ -28,16 +33,9 @@ def initialize_browser_state(playwright: Playwright):
 
 
 @pytest.fixture
-def chromium_page(initialize_browser_state, request: SubRequest, playwright: Playwright) -> Page:
-    yield from initialize_playwright_page(
-        playwright,
-        test_name=request.node.name
-    )
-
-@pytest.fixture
 def chromium_page_with_state(initialize_browser_state, request: SubRequest, playwright: Playwright) -> Page:
     yield from initialize_playwright_page(
         playwright,
         test_name=request.node.name,
-        storage_state=settings.browser_state_file
+        storage_state=settings.browser_state_file,
     )
