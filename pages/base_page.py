@@ -1,6 +1,6 @@
 from typing import Pattern
 
-import allure  # Импортируем allure
+import allure
 from playwright.sync_api import Page, expect
 
 from tools.logger import get_logger
