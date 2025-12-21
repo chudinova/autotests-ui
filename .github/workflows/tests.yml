@@ -55,14 +55,22 @@ jobs:
             cp -r gh-pages/allure-history/* allure-results/history/
           fi
 
-      # 6. Шаг для генерации и отображения отчёта Allure
+      # ⬇️ УСТАНОВКА ALLURE CLI
+      - name: Install Allure CLI
+        if: always()
+        run: |
+          curl -L https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz -o allure.tgz
+          tar -xzf allure.tgz
+          sudo mv allure-2.27.0 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+      # ⬇️ ГЕНЕРАЦИЯ ОТЧЁТА
       - name: Generate Allure Report
         if: always()
-        uses: allure-framework/allure-report@v0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          allure generate allure-results -o allure-report --clean
 
-      # 7. Шаг для деплоя отчёта Allure на GitHub Pages, чтобы его можно было просматривать в браузере
+      # ⬇️ ПУБЛИКАЦИЯ
       - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
