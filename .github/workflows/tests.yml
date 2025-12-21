@@ -4,11 +4,9 @@ name: UI tests
 # Указываем, когда будет запускаться данный workflow
 on:
   push:
-    branches:
-      - main  # Запускать workflow, когда будет сделан коммит в ветку main
+    branches: [ main ] # Запускать workflow, когда будет сделан коммит в ветку main
   pull_request:
-    branches:
-      - main  # Запускать workflow, когда будет сделан pull request в ветку main
+    branches: [ main ] # Запускать workflow, когда будет сделан pull request в ветку main
 
 # Определяем все шаги, которые должны быть выполнены в рамках работы с тестами
 jobs:
@@ -22,7 +20,7 @@ jobs:
 
       # 2. Шаг для установки Python на виртуальной машине
       - name: Set up Python
-        uses: actions/setup-python@v4  # Используем GitHub Action для установки Python
+        uses: actions/setup-python@v5  # Используем GitHub Action для установки Python
         with:
           python-version: '3.11'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
 
@@ -36,16 +34,26 @@ jobs:
       # 4. Шаг для запуска тестов с использованием pytest и генерации отчётов Allure
       - name: Run Playwright tests with pytest and generate Allure results
         run: |
-          pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
+          # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
+               pytest -m regression --alluredir=allure-results --numprocesses 2
 
-      # 5. Шаг для получения истории отчётов Allure, если она существует
+      # ⬇️ Забираем историю отчётов
       - name: Get Allure history
-        uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
-        if: always()  # Всегда выполняем, независимо от успеха или неудачи предыдущих шагов
-        continue-on-error: true  # Если здесь возникнет ошибка, workflow всё равно продолжит выполнение
+        if: always()
+        continue-on-error: true
+        uses: actions/checkout@v4
         with:
           ref: gh-pages  # Указываем ветку gh-pages для получения отчётов
           path: gh-pages  # Указываем путь для сохранения отчётов
+
+      # ⬇️ КЛЮЧЕВОЙ шаг
+      - name: Restore Allure history
+        if: always()
+        run: |
+          mkdir -p allure-results/history
+          if [ -d gh-pages/allure-history ]; then
+            cp -r gh-pages/allure-history/* allure-results/history/
+          fi
 
       # 6. Шаг для генерации и отображения отчёта Allure
       - name: Generate Allure Report
