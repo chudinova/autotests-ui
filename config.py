@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     )
 
     app_url: HttpUrl
-    headless: bool
+    headless: bool = True
     browsers: list[Browser]
     test_user: TestUser
     test_data: TestData
