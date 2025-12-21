@@ -50,10 +50,10 @@ jobs:
       # 6. Шаг для генерации и отображения отчёта Allure
       - name: Generate Allure Report
         if: always()
-        uses: frankescobar/allure-action@v1.0.5
+        uses: allure-framework/allure-github-action@v1
         with:
-          results-dir: allure-results
-          report-dir: allure-report
+          allure_results: allure-results
+          allure_report: allure-report
 
       # 7. Шаг для деплоя отчёта Allure на GitHub Pages, чтобы его можно было просматривать в браузере
       - name: Deploy report to Github Pages
