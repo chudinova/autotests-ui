@@ -58,10 +58,9 @@ jobs:
       # 6. Шаг для генерации и отображения отчёта Allure
       - name: Generate Allure Report
         if: always()
-        uses: allure-framework/allure-github-action@v1
+        uses: allure-framework/allure-report@v0
         with:
-          allure_results: allure-results
-          allure_report: allure-report
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       # 7. Шаг для деплоя отчёта Allure на GitHub Pages, чтобы его можно было просматривать в браузере
       - name: Deploy report to Github Pages
