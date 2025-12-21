@@ -8,7 +8,8 @@ on:
       - main  # Запускать workflow, когда будет сделан коммит в ветку main
   pull_request:
     branches:
-      - main  # Запускать workflow, когда будет сделан pull request в ветку main
+      - main  # Запускать при PR в main
+  workflow_dispatch:  # Позволяет запускать workflow вручную через GitHub UI
 
 # Определяем все шаги, которые должны быть выполнены в рамках работы с тестами
 jobs:
@@ -36,8 +37,7 @@ jobs:
       # 4. Шаг для запуска тестов с использованием pytest и генерации отчётов Allure
       - name: Run Playwright tests with pytest and generate Allure results
         run: |
-          pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
-
+          pytest -m regression --alluredir=allure-results --numprocesses 2
       # 5. Шаг для получения истории отчётов Allure, если она существует
       - name: Get Allure history
         uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
