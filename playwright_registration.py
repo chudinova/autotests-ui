@@ -4,7 +4,7 @@ from config import settings
 from tools.routes import AppRoute
 
 with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=settings.headless)
     context = browser.new_context()
     page = context.new_page()
 
@@ -29,7 +29,7 @@ with sync_playwright() as playwright:
     context.storage_state(path="browser-state.json")
 
 with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=settings.headless)
     context = browser.new_context(storage_state='browser-state.json')
     page = context.new_page()
 

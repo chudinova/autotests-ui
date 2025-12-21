@@ -4,7 +4,7 @@ from config import settings
 from tools.routes import AppRoute
 
 with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=settings.headless)
     page = browser.new_page()
 
     page.goto(AppRoute.REGISTRATION)
