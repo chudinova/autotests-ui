@@ -38,31 +38,47 @@ jobs:
       - name: Run Playwright tests with pytest and generate Allure results
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2
-      # 5. Шаг для получения истории отчётов Allure, если она существует
-      - name: Get Allure history
-        uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
-        if: always()  # Всегда выполняем, независимо от успеха или неудачи предыдущих шагов
-        continue-on-error: true  # Если здесь возникнет ошибка, workflow всё равно продолжит выполнение
-        with:
-          ref: gh-pages  # Указываем ветку gh-pages для получения отчётов
-          path: gh-pages  # Указываем путь для сохранения отчётов
 
-      # 6. Шаг для генерации и отображения отчёта Allure
-      - name: Generates Allure Report with history
-        uses: simple-elf/allure-report-action@master
+      - name: Upload Allure results as artifact
+        uses: actions/upload-artifact@v4
         if: always()
-        id: allure-report
         with:
-          allure_results: allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
-          allure_history: allure-history
+          name: allure-results
+          path: allure-results  # Сохраняем результаты как артефакт, чтобы использовать в следующей джобе
 
-      # 7. Шаг для деплоя отчёта Allure на GitHub Pages, чтобы его можно было просматривать в браузере
-      - name: Deploy report to Github Pages
-        if: always()  # Выполняется всегда, независимо от успеха других шагов
-        uses: peaceiris/actions-gh-pages@v4  # Используем GitHub Action для публикации отчёта на GitHub Pages
+  publish-report:
+    needs: run-tests  # Указываем, что эта джоба зависит от успешного выполнения джобы run-tests
+    runs-on: ubuntu-latest
+    if: always()  # Выполняем независимо от результата предыдущей джобы, чтобы отчёт генерировался даже при падении тестов
+
+    steps:
+      - name: Check out gh-pages for Allure history
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Токен для аутентификации на GitHub
-          publish_branch: gh-pages  # Указываем, что отчёт будет опубликован в ветке gh-pages
-          publish_dir: allure-history  # Указываем папку, которая будет опубликована на GitHub Pages
+          ref: gh-pages
+          path: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}  # Получаем содержимое ветки gh-pages, чтобы использовать историю отчётов
+
+      - name: Download Allure results artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results  # Загружаем артефакт с результатами тестов из предыдущей джобы
+
+      - name: Get Allure history
+        run: |
+          mkdir -p allure-history
+          cp -r gh-pages/allure-history/* allure-history/ || true  # Копируем историю из gh-pages, если существует, чтобы сохранить динамику в отчёте
+
+      # 5. Шаг для генерации и отображения отчёта Allure
+      - name: Generates Allure Report with history
+        run: |
+          npm install -g allure-commandline  # Устанавливаем Allure CLI для генерации отчёта
+          allure generate allure-results -c -o allure-history  # Генерируем отчёт с историей, перезаписываем старый при необходимости
+
+      - name: Deploy report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages  # Указываем, что публиковать будем в ветку gh-pages
+          publish_dir: allure-history  # Указываем директорию, которую нужно опубликовать как GitHub Pages
