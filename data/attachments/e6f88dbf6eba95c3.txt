@@ -1,0 +1,49 @@
+2026-01-20 18:20:58,212 | BASE_PAGE | INFO | Opening the url "AppRoute.COURSES"
+2026-01-20 18:20:59,438 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-app-title-text" at index "0"
+2026-01-20 18:20:59,439 | BASE_ELEMENT | INFO | Checking that text "App title" is visible
+2026-01-20 18:20:59,483 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-app-title-text" at index "0"
+2026-01-20 18:20:59,483 | BASE_ELEMENT | INFO | Checking that text "App title" has text "UI Course"
+2026-01-20 18:20:59,500 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index "0"
+2026-01-20 18:20:59,500 | BASE_ELEMENT | INFO | Checking that text "Welcome title" is visible
+2026-01-20 18:20:59,514 | BASE_ELEMENT | INFO | Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index "0"
+2026-01-20 18:20:59,514 | BASE_ELEMENT | INFO | Checking that text "Welcome title" has text "Welcome, username!"
+2026-01-20 18:20:59,533 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-icon" at index "0"
+2026-01-20 18:20:59,533 | BASE_ELEMENT | INFO | Checking that icon "Sidebar" is visible
+2026-01-20 18:20:59,549 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,549 | BASE_ELEMENT | INFO | Checking that text "Sidebar" is visible
+2026-01-20 18:20:59,568 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,568 | BASE_ELEMENT | INFO | Checking that text "Sidebar" has text "Logout"
+2026-01-20 18:20:59,582 | BASE_ELEMENT | INFO | Getting locator with "data-testid=logout-drawer-list-item-button" at index "0"
+2026-01-20 18:20:59,582 | BASE_ELEMENT | INFO | Checking that button "Sidebar" is visible
+2026-01-20 18:20:59,593 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-icon" at index "0"
+2026-01-20 18:20:59,593 | BASE_ELEMENT | INFO | Checking that icon "Sidebar" is visible
+2026-01-20 18:20:59,602 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,602 | BASE_ELEMENT | INFO | Checking that text "Sidebar" is visible
+2026-01-20 18:20:59,612 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,612 | BASE_ELEMENT | INFO | Checking that text "Sidebar" has text "Courses"
+2026-01-20 18:20:59,621 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-drawer-list-item-button" at index "0"
+2026-01-20 18:20:59,621 | BASE_ELEMENT | INFO | Checking that button "Sidebar" is visible
+2026-01-20 18:20:59,630 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-icon" at index "0"
+2026-01-20 18:20:59,630 | BASE_ELEMENT | INFO | Checking that icon "Sidebar" is visible
+2026-01-20 18:20:59,639 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,639 | BASE_ELEMENT | INFO | Checking that text "Sidebar" is visible
+2026-01-20 18:20:59,648 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index "0"
+2026-01-20 18:20:59,648 | BASE_ELEMENT | INFO | Checking that text "Sidebar" has text "Dashboard"
+2026-01-20 18:20:59,657 | BASE_ELEMENT | INFO | Getting locator with "data-testid=dashboard-drawer-list-item-button" at index "0"
+2026-01-20 18:20:59,657 | BASE_ELEMENT | INFO | Checking that button "Sidebar" is visible
+2026-01-20 18:20:59,666 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+2026-01-20 18:20:59,666 | BASE_ELEMENT | INFO | Checking that text "Courses" is visible
+2026-01-20 18:20:59,675 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+2026-01-20 18:20:59,676 | BASE_ELEMENT | INFO | Checking that text "Courses" has text "Courses"
+2026-01-20 18:20:59,684 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-create-course-button" at index "0"
+2026-01-20 18:20:59,685 | BASE_ELEMENT | INFO | Checking that button "Create course" is visible
+2026-01-20 18:20:59,693 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-empty-view-icon" at index "0"
+2026-01-20 18:20:59,693 | BASE_ELEMENT | INFO | Checking that icon "EmptyView" is visible
+2026-01-20 18:20:59,702 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-empty-view-title-text" at index "0"
+2026-01-20 18:20:59,702 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-20 18:20:59,711 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-empty-view-title-text" at index "0"
+2026-01-20 18:20:59,711 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "There is no results"
+2026-01-20 18:20:59,720 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-empty-view-description-text" at index "0"
+2026-01-20 18:20:59,720 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-20 18:20:59,730 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-empty-view-description-text" at index "0"
+2026-01-20 18:20:59,730 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "Results from the load test pipeline will be displayed here"
