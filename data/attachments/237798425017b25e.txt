@@ -1,0 +1,29 @@
+2026-01-21 06:08:35,102 | BASE_PAGE | INFO | Opening the url "AppRoute.COURSES_CREATE"
+2026-01-21 06:08:36,359 | FILE_INPUT | INFO | Set file "testdata/files/image.png" to the file input "Upload"
+2026-01-21 06:08:36,359 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+2026-01-21 06:08:36,416 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-icon" at index "0"
+2026-01-21 06:08:36,416 | BASE_ELEMENT | INFO | Checking that icon "Image upload info" is visible
+2026-01-21 06:08:36,515 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-21 06:08:36,515 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-21 06:08:36,542 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-21 06:08:36,542 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Tap on "Upload image" button to select file"
+2026-01-21 06:08:36,567 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-21 06:08:36,567 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-21 06:08:36,586 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-21 06:08:36,586 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Recommended file size 540X300"
+2026-01-21 06:08:36,604 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+2026-01-21 06:08:36,604 | BASE_ELEMENT | INFO | Checking that button "Upload" is visible
+2026-01-21 06:08:36,619 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-remove-button" at index "0"
+2026-01-21 06:08:36,619 | BASE_ELEMENT | INFO | Checking that button "Remove" is visible
+2026-01-21 06:08:36,637 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-preview-image" at index "0"
+2026-01-21 06:08:36,637 | BASE_ELEMENT | INFO | Checking that image "Preview" is visible
+2026-01-21 06:08:36,678 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-21 06:08:36,678 | INPUT | INFO | Fill input "Title" to value "Playwright"
+2026-01-21 06:08:36,736 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-21 06:08:36,736 | INPUT | INFO | Checking that input "Title" has a value "Playwright"
+2026-01-21 06:08:36,767 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-21 06:08:36,767 | INPUT | INFO | Fill input "Estimated time" to value "2 weeks"
+2026-01-21 06:08:36,828 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-21 06:08:36,828 | INPUT | INFO | Checking that input "Estimated time" has a value "2 weeks"
+2026-01-21 06:08:36,851 | TEXTAREA | INFO | Fill textarea "Description" to value "Playwright"
+2026-01-21 06:08:36,851 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-description-input" at index "0"
