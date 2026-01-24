@@ -1,0 +1,16 @@
+2026-01-24 12:29:21,730 | BASE_PAGE | INFO | Opening the url "AppRoute.LOGIN"
+2026-01-24 12:29:22,890 | BASE_ELEMENT | INFO | Getting locator with "data-testid=login-page-registration-link" at index "0"
+2026-01-24 12:29:22,890 | BASE_ELEMENT | INFO | Clicking link "Registration"
+2026-01-24 12:29:22,951 | BASE_PAGE | INFO | Checking that current url matches pattern ".*/#/auth/registration"
+2026-01-24 12:29:22,977 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-email-input" at index "0"
+2026-01-24 12:29:22,977 | BASE_ELEMENT | INFO | Checking that input "Email" is visible
+2026-01-24 12:29:22,993 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-email-input" at index "0"
+2026-01-24 12:29:22,993 | INPUT | INFO | Checking that input "Email" has a value ""
+2026-01-24 12:29:23,001 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-username-input" at index "0"
+2026-01-24 12:29:23,001 | BASE_ELEMENT | INFO | Checking that input "Username" is visible
+2026-01-24 12:29:23,010 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-username-input" at index "0"
+2026-01-24 12:29:23,010 | INPUT | INFO | Checking that input "Username" has a value ""
+2026-01-24 12:29:23,020 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-password-input" at index "0"
+2026-01-24 12:29:23,020 | BASE_ELEMENT | INFO | Checking that input "Password" is visible
+2026-01-24 12:29:23,028 | BASE_ELEMENT | INFO | Getting locator with "data-testid=registration-form-password-input" at index "0"
+2026-01-24 12:29:23,028 | INPUT | INFO | Checking that input "Password" has a value ""

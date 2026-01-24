@@ -1,0 +1,131 @@
+2026-01-24 12:29:34,767 | BASE_PAGE | INFO | Opening the url "AppRoute.COURSES_CREATE"
+2026-01-24 12:29:36,109 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-toolbar-title-text" at index "0"
+2026-01-24 12:29:36,109 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-01-24 12:29:36,147 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-toolbar-title-text" at index "0"
+2026-01-24 12:29:36,147 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Create course"
+2026-01-24 12:29:36,159 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-toolbar-create-course-button" at index "0"
+2026-01-24 12:29:36,159 | BASE_ELEMENT | INFO | Checking that button "Create course" is visible
+2026-01-24 12:29:36,171 | BUTTON | INFO | Checking that button "Create course" is disabled
+2026-01-24 12:29:36,171 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-toolbar-create-course-button" at index "0"
+2026-01-24 12:29:36,198 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-icon" at index "0"
+2026-01-24 12:29:36,198 | BASE_ELEMENT | INFO | Checking that icon "Image upload info" is visible
+2026-01-24 12:29:36,217 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-24 12:29:36,217 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-24 12:29:36,230 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-24 12:29:36,230 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Tap on "Upload image" button to select file"
+2026-01-24 12:29:36,240 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-24 12:29:36,240 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-24 12:29:36,250 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-24 12:29:36,250 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Recommended file size 540X300"
+2026-01-24 12:29:36,262 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+2026-01-24 12:29:36,262 | BASE_ELEMENT | INFO | Checking that button "Upload" is visible
+2026-01-24 12:29:36,270 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-empty-view-icon" at index "0"
+2026-01-24 12:29:36,270 | BASE_ELEMENT | INFO | Checking that icon "EmptyView" is visible
+2026-01-24 12:29:36,279 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-empty-view-title-text" at index "0"
+2026-01-24 12:29:36,279 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-24 12:29:36,289 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-empty-view-title-text" at index "0"
+2026-01-24 12:29:36,289 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "No image selected"
+2026-01-24 12:29:36,298 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-empty-view-description-text" at index "0"
+2026-01-24 12:29:36,299 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-24 12:29:36,309 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-empty-view-description-text" at index "0"
+2026-01-24 12:29:36,309 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "Preview of selected image will be displayed here"
+2026-01-24 12:29:36,321 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-24 12:29:36,321 | BASE_ELEMENT | INFO | Checking that input "Title" is visible
+2026-01-24 12:29:36,331 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-24 12:29:36,331 | INPUT | INFO | Checking that input "Title" has a value ""
+2026-01-24 12:29:36,343 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-24 12:29:36,343 | BASE_ELEMENT | INFO | Checking that input "Estimated time" is visible
+2026-01-24 12:29:36,352 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-24 12:29:36,352 | INPUT | INFO | Checking that input "Estimated time" has a value ""
+2026-01-24 12:29:36,361 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-description-input" at index "0"
+2026-01-24 12:29:36,361 | BASE_ELEMENT | INFO | Checking that textarea "Description" is visible
+2026-01-24 12:29:36,374 | TEXTAREA | INFO | Check have textarea "Description" to value ""
+2026-01-24 12:29:36,374 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-description-input" at index "0"
+2026-01-24 12:29:36,384 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+2026-01-24 12:29:36,385 | BASE_ELEMENT | INFO | Checking that input "Max score" is visible
+2026-01-24 12:29:36,397 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+2026-01-24 12:29:36,397 | INPUT | INFO | Checking that input "Max score" has a value "0"
+2026-01-24 12:29:36,407 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+2026-01-24 12:29:36,407 | BASE_ELEMENT | INFO | Checking that input "Min score" is visible
+2026-01-24 12:29:36,416 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+2026-01-24 12:29:36,416 | INPUT | INFO | Checking that input "Min score" has a value "0"
+2026-01-24 12:29:36,427 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-box-toolbar-title-text" at index "0"
+2026-01-24 12:29:36,427 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-01-24 12:29:36,439 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-box-toolbar-title-text" at index "0"
+2026-01-24 12:29:36,439 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Exercises"
+2026-01-24 12:29:36,448 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-box-toolbar-create-exercise-button" at index "0"
+2026-01-24 12:29:36,448 | BASE_ELEMENT | INFO | Checking that button "Create exercise" is visible
+2026-01-24 12:29:36,461 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-empty-view-icon" at index "0"
+2026-01-24 12:29:36,461 | BASE_ELEMENT | INFO | Checking that icon "EmptyView" is visible
+2026-01-24 12:29:36,474 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-empty-view-title-text" at index "0"
+2026-01-24 12:29:36,475 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-24 12:29:36,486 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-empty-view-title-text" at index "0"
+2026-01-24 12:29:36,486 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "There is no exercises"
+2026-01-24 12:29:36,494 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-empty-view-description-text" at index "0"
+2026-01-24 12:29:36,494 | BASE_ELEMENT | INFO | Checking that text "EmptyView" is visible
+2026-01-24 12:29:36,504 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-exercises-empty-view-description-text" at index "0"
+2026-01-24 12:29:36,504 | BASE_ELEMENT | INFO | Checking that text "EmptyView" has text "Click on "Create exercise" button to create new exercise"
+2026-01-24 12:29:36,516 | FILE_INPUT | INFO | Set file "testdata/files/image.png" to the file input "Upload"
+2026-01-24 12:29:36,516 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+2026-01-24 12:29:36,540 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-icon" at index "0"
+2026-01-24 12:29:36,541 | BASE_ELEMENT | INFO | Checking that icon "Image upload info" is visible
+2026-01-24 12:29:36,603 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-24 12:29:36,603 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-24 12:29:36,617 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-title-text" at index "0"
+2026-01-24 12:29:36,617 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Tap on "Upload image" button to select file"
+2026-01-24 12:29:36,635 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-24 12:29:36,636 | BASE_ELEMENT | INFO | Checking that text "Image upload info" is visible
+2026-01-24 12:29:36,650 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-info-description-text" at index "0"
+2026-01-24 12:29:36,650 | BASE_ELEMENT | INFO | Checking that text "Image upload info" has text "Recommended file size 540X300"
+2026-01-24 12:29:36,664 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-upload-button" at index "0"
+2026-01-24 12:29:36,664 | BASE_ELEMENT | INFO | Checking that button "Upload" is visible
+2026-01-24 12:29:36,683 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-remove-button" at index "0"
+2026-01-24 12:29:36,683 | BASE_ELEMENT | INFO | Checking that button "Remove" is visible
+2026-01-24 12:29:36,697 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-preview-image-upload-widget-preview-image" at index "0"
+2026-01-24 12:29:36,697 | BASE_ELEMENT | INFO | Checking that image "Preview" is visible
+2026-01-24 12:29:36,728 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-24 12:29:36,728 | INPUT | INFO | Fill input "Title" to value "Playwright"
+2026-01-24 12:29:36,809 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-title-input" at index "0"
+2026-01-24 12:29:36,809 | INPUT | INFO | Checking that input "Title" has a value "Playwright"
+2026-01-24 12:29:36,827 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-24 12:29:36,827 | INPUT | INFO | Fill input "Estimated time" to value "2 weeks"
+2026-01-24 12:29:36,870 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-estimated-time-input" at index "0"
+2026-01-24 12:29:36,870 | INPUT | INFO | Checking that input "Estimated time" has a value "2 weeks"
+2026-01-24 12:29:36,888 | TEXTAREA | INFO | Fill textarea "Description" to value "Playwright"
+2026-01-24 12:29:36,888 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-description-input" at index "0"
+2026-01-24 12:29:37,001 | TEXTAREA | INFO | Check have textarea "Description" to value "Playwright"
+2026-01-24 12:29:37,001 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-description-input" at index "0"
+2026-01-24 12:29:37,024 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+2026-01-24 12:29:37,024 | INPUT | INFO | Fill input "Max score" to value "100"
+2026-01-24 12:29:37,103 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-max-score-input" at index "0"
+2026-01-24 12:29:37,103 | INPUT | INFO | Checking that input "Max score" has a value "100"
+2026-01-24 12:29:37,126 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+2026-01-24 12:29:37,126 | INPUT | INFO | Fill input "Min score" to value "10"
+2026-01-24 12:29:37,194 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-form-min-score-input" at index "0"
+2026-01-24 12:29:37,194 | INPUT | INFO | Checking that input "Min score" has a value "10"
+2026-01-24 12:29:37,224 | BASE_ELEMENT | INFO | Getting locator with "data-testid=create-course-toolbar-create-course-button" at index "0"
+2026-01-24 12:29:37,224 | BASE_ELEMENT | INFO | Clicking button "Create course"
+2026-01-24 12:29:37,369 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+2026-01-24 12:29:37,370 | BASE_ELEMENT | INFO | Checking that text "Courses" is visible
+2026-01-24 12:29:37,596 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-title-text" at index "0"
+2026-01-24 12:29:37,596 | BASE_ELEMENT | INFO | Checking that text "Courses" has text "Courses"
+2026-01-24 12:29:37,622 | BASE_ELEMENT | INFO | Getting locator with "data-testid=courses-list-toolbar-create-course-button" at index "0"
+2026-01-24 12:29:37,622 | BASE_ELEMENT | INFO | Checking that button "Create course" is visible
+2026-01-24 12:29:37,651 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-preview-image" at index "0"
+2026-01-24 12:29:37,651 | BASE_ELEMENT | INFO | Checking that image "Preview" is visible
+2026-01-24 12:29:37,742 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-widget-title-text" at index "0"
+2026-01-24 12:29:37,742 | BASE_ELEMENT | INFO | Checking that text "Title" is visible
+2026-01-24 12:29:37,788 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-widget-title-text" at index "0"
+2026-01-24 12:29:37,789 | BASE_ELEMENT | INFO | Checking that text "Title" has text "Playwright"
+2026-01-24 12:29:37,839 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+2026-01-24 12:29:37,840 | BASE_ELEMENT | INFO | Checking that text "Max score" is visible
+2026-01-24 12:29:37,862 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-max-score-info-row-view-text" at index "0"
+2026-01-24 12:29:37,862 | BASE_ELEMENT | INFO | Checking that text "Max score" has text "Max score: 100"
+2026-01-24 12:29:37,895 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+2026-01-24 12:29:37,896 | BASE_ELEMENT | INFO | Checking that text "Min score" is visible
+2026-01-24 12:29:37,920 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-min-score-info-row-view-text" at index "0"
+2026-01-24 12:29:37,920 | BASE_ELEMENT | INFO | Checking that text "Min score" has text "Min score: 10"
+2026-01-24 12:29:37,939 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+2026-01-24 12:29:37,939 | BASE_ELEMENT | INFO | Checking that text "Estimated time" is visible
+2026-01-24 12:29:37,954 | BASE_ELEMENT | INFO | Getting locator with "data-testid=course-estimated-time-info-row-view-text" at index "0"
+2026-01-24 12:29:37,954 | BASE_ELEMENT | INFO | Checking that text "Estimated time" has text "Estimated time: 2 weeks"
